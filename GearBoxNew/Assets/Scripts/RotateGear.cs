@@ -66,11 +66,6 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
         }
     } 
 
-   
-
-
-
-
     public float MeasureFirstDistance()
     {
         float distance = Vector3.Distance(boxMarkerOne.transform.position, cardMarkerOne.transform.position);
