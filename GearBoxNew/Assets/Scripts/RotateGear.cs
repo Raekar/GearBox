@@ -34,7 +34,7 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
     [SerializeField] private GameObject cardMarkerThree;
     [SerializeField] private GameObject cardMarkerFour;
 
-    
+    Animator anim;
 
     private float distance;
    
@@ -43,6 +43,9 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
 
     protected virtual void Start()
     {
+        anim = GetComponent<Animator>();
+        anim.SetBool("CanOpen", false);
+
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
         {
@@ -156,6 +159,11 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
         gearTwelve.transform.Rotate(0, 0, 1);
     }
 
+    public void OpenChest()
+    {
+        anim.SetBool("CanOpen", true);
+    }
+
     // Update is called once per frame
     void Update () {
 
@@ -219,6 +227,9 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
             cardGearOne.SetActive(true);
         }
 
-
-	}
+        if (gearTwo.activeInHierarchy && gearFive.activeInHierarchy && gearEight.activeInHierarchy && gearEleven.activeInHierarchy)
+        {
+            OpenChest();
+        }
+    }
 }
