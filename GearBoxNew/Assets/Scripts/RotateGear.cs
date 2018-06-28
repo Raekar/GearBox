@@ -209,6 +209,11 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
 
                                     RotateGearEleven();
                                     RotateGearTwelve();
+
+                                    if (gearTwo.activeInHierarchy && gearFive.activeInHierarchy && gearEight.activeInHierarchy && gearEleven.activeInHierarchy)
+                                    {
+                                        OpenChest();
+                                    }
                                 }
                             }
                         }
@@ -217,14 +222,11 @@ public class RotateGear : MonoBehaviour, ITrackableEventHandler {
                 }
             }
         }
-        else
+       /* else
         {
             cardGearOne.SetActive(true);
         }
-
-        if (gearTwo.activeInHierarchy && gearFive.activeInHierarchy && gearEight.activeInHierarchy && gearEleven.activeInHierarchy)
-        {
-            OpenChest();
-        }
+        */
+       
     }
 }

@@ -3761,6 +3761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 446694175}
   - component: {fileID: 1392155928}
+  - component: {fileID: 1392155929}
   m_Layer: 0
   m_Name: GearBox
   m_TagString: Untagged
@@ -3805,6 +3806,23 @@ MonoBehaviour:
   cardMarkerTwo: {fileID: 1047532038}
   cardMarkerThree: {fileID: 1527947325}
   cardMarkerFour: {fileID: 1066973456}
+--- !u!95 &1392155929
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1392155927}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ba119df37fd625b4abd5874d0ed8f131, type: 3}
+  m_Controller: {fileID: 9100000, guid: 1001c0e00957f1545a38e422b15789a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1404334273
 GameObject:
   m_ObjectHideFlags: 0

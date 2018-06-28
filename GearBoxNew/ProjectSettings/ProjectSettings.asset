@@ -243,7 +243,7 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/UnityProjects/GearBox/keyUser.keystore
+  AndroidKeystoreName: D:/UnityProjects/GearBox/GearBoxNew/keyUser.keystore
   AndroidKeyaliasName: keyuser
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
